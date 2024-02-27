@@ -1,0 +1,369 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Календари 2022</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Roboto;
+            font-weight: lighter;
+            color: gray;
+            line-height: 150%;
+            text-align: left;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #006838;
+            font-family: Roboto medium;
+            margin-top: 26px;
+            margin-bottom: 70px;
+        }
+
+        h2 {
+            text-align: left;
+            margin-left: 20%;
+            color: #FF7D00;
+            font-family: Roboto;
+            font-weight: normal;
+            margin-top: 20px;
+            margin-bottom: 70px;
+        }
+
+        //a{
+        display: block;
+        width: 308px;
+        }
+
+        .head {
+            display: flex;
+            background: #006838;
+            max-height: 100px;
+            justify-content: space-between;
+            padding: 10px 70px 0px;
+
+        }
+
+        .head p {
+            font-family: Roboto, sans-serif;
+            font-size: 20px;
+            color: white;
+            align-self: center;
+        }
+
+        .orange-line {
+            margin-top: 5px;
+            margin-bottom: 40px;
+            background: #FF7D00;
+            height: 5px;
+
+        }
+
+        .foot {
+            display: flex;
+            background: #FF7D00;
+            max-height: 100px;
+            justify-content: space-between;
+            padding: 10px 70px 0px;
+
+        }
+
+        .foot p {
+            font-family: Roboto;
+            font-size: 20px;
+            color: #006838;
+            align-self: center;
+        }
+
+        input {
+            padding: 5px;
+            margin: 10px;
+            height: 30px;
+            width: 30%;
+            border-radius: 8px;
+            border: 2px solid #FF7D00
+        }
+
+        .text {
+            padding: 0 20%;
+        }
+
+        a.rollover {
+            display: block;
+            width: 331px;
+            height: auto;
+            margin: 0px 100px;
+            background: url(button1.png);
+            background-repeat: no-repeat;
+
+        }
+
+        a.rollover:hover {
+            display: block;
+            width: 331px;
+            height: auto;
+            margin: 0px 100px;
+            background: url(AI_Image.png);
+            background-size: 331px;
+            background-repeat: no-repeat;
+        }
+
+        a.rollover2 {
+            display: block;
+            width: 331px;
+            height: auto;
+            margin: 0px 100px;
+            background: url(button2.png);
+            background-repeat: no-repeat;
+
+        }
+
+        a.rollover2:hover {
+            display: block;
+            width: 331px;
+            height: auto;
+            margin: 0px 100px;
+            background: url(AI_Image2.png);
+            background-size: 331px;
+            background-repeat: no-repeat;
+        }
+
+        a.rollover3 {
+            display: block;
+            width: 331px;
+            height: auto;
+            margin: 0px 100px;
+            background: url(trio.png);
+            background-repeat: no-repeat;
+        }
+
+        a.rollover3:hover {
+            display: block;
+            width: 331px;
+            height: auto;
+            margin: 0px 100px;
+            background: url(AI_Image3.png);
+            background-size: 331px;
+            background-repeat: no-repeat;
+        }
+
+        a.rollover4 {
+            display: block;
+            width: 331px;
+            height: auto;
+            margin: 0px 100px;
+            background: url(mono.png);
+            background-repeat: no-repeat;
+        }
+
+        a.rollover4:hover {
+            display: block;
+            width: 331px;
+            height: auto;
+            margin: 0px 100px;
+            background: url(AI_Image4.png);
+            background-size: 331px;
+            background-repeat: no-repeat;
+        }
+
+        a.rollover5 {
+            display: block;
+            width: 331px;
+            height: auto;
+            margin: 0px 100px;
+            background: url(vert.png);
+            background-repeat: no-repeat;
+        }
+
+        a.rollover5:hover {
+            display: block;
+            width: 331px;
+            height: auto;
+            margin: 0px 100px;
+            background: url(AI_Image5.png);
+            background-size: 331px;
+            background-repeat: no-repeat;
+        }
+
+        a.rollover6 {
+            display: block;
+            width: 331px;
+            height: auto;
+            margin: 0px 100px;
+            background: url(horizont.png);
+            background-repeat: no-repeat;
+        }
+
+        a.rollover6:hover {
+            display: block;
+            width: 331px;
+            height: auto;
+            margin: 0px 100px;
+            background: url(AI_Image6.png);
+            background-size: 331px;
+            background-repeat: no-repeat;
+        }
+
+        .buttons {
+            margin-top: 100px;
+            min-height: 222px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 300px;
+        }
+
+        .wrapper {
+            display: flex;
+            background: #FF7D00;
+            ;
+            flex-direction: column;
+            min-height: 100%;
+        }
+
+        .content {
+            display: flex;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 0.5rem 3rem;
+            flex: 1 0 auto;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        .footer {
+            flex: 0 0 auto;
+        }
+
+        #button1,
+        #button2 {
+            display: block;
+            margin: 100px;
+        }
+
+        #home {
+            width: 3%;
+        }
+
+
+
+
+
+        /* CSS-стили */
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <div><img src="logo.png" alt="лого"></div>
+            <p>Телефон 555-44-33</p>
+            <p>пр. Тореза д. 98 кор. 1</p>
+        </div>
+        <div class="orange-line"></div>
+    </header>
+    <main>
+        <form action="">
+            <input type="search" id="my-search" placeholder="Поиск">
+        </form>
+        <p><a name="top"></a></p>
+        <h1>Новогоднее предложение - календари 2022</h1>
+        <p class="text">
+            Это случайно сгенерированный текст рыба. С другой стороны реализация намеченного плана развития способствует
+            подготовке и реализации ключевых компонентов планируемого обновления? Повседневная практика показывает, что
+            дальнейшее развитие различных форм деятельности обеспечивает актуальность соответствующих условий
+            активизации. Не следует, однако, забывать о том, что повышение уровня гражданского сознания способствует
+            повышению актуальности всесторонне сбалансированных нововведений!
+
+            Значимость этих проблем настолько очевидна, что постоянное информационно-техническое обеспечение нашей
+            деятельности создаёт предпосылки качественно новых шагов для дальнейших направлений развития проекта!
+
+            Дорогие друзья, постоянное информационно-техническое обеспечение нашей деятельности напрямую зависит от
+            всесторонне сбалансированных нововведений? Повседневная практика показывает, что консультация с
+            профессионалами из IT влечет за собой процесс внедрения и модернизации соответствующих условий активизации!
+            С другой стороны постоянный количественный рост и сфера нашей активности представляет собой интересный
+            эксперимент проверки новых предложений!
+        </p>
+        <div class="buttons">
+            <a href="#quarter" class="rollover"></a>
+            <a href="#wall" class="rollover2"></a>
+        </div>
+        <p><a name="quarter"></a></p>
+        <h2>КВАРТАЛЬНЫЕ КАЛЕНДАРИ</h2>
+
+        <p class="text">
+            Это случайно сгенерированный текст рыба. С другой стороны реализация намеченного плана развития способствует
+            подготовке и реализации ключевых компонентов планируемого обновления? Повседневная практика показывает, что
+            дальнейшее развитие различных форм деятельности обеспечивает актуальность соответствующих условий
+            активизации. Не следует, однако, забывать о том, что повышение уровня гражданского сознания способствует
+            повышению актуальности всесторонне сбалансированных нововведений!
+
+            Значимость этих проблем настолько очевидна, что постоянное информационно-техническое обеспечение нашей
+            деятельности создаёт предпосылки качественно новых шагов для дальнейших направлений развития проекта!
+
+            Дорогие друзья, постоянное информационно-техническое обеспечение нашей деятельности напрямую зависит от
+            всесторонне сбалансированных нововведений? Повседневная практика показывает, что консультация с
+            профессионалами из IT влечет за собой процесс внедрения и модернизации соответствующих условий активизации!
+            С другой стороны постоянный количественный рост и сфера нашей активности представляет собой интересный
+            эксперимент проверки новых предложений!
+        </p>
+        <p><a name="quarter"></a></p>
+        <div class="buttons">
+            <a href="trio.html" class="rollover3"></a>
+            <a href="mono.html" class="rollover4"></a>
+        </div>
+        <P>
+            <a href="#top"><img src="home_white.jpg" alt="HOME" id="home"></a>
+        </P>
+        <p><a name="wall"></a></p>
+        <h2>ПЕРЕКИДНЫЕ КАЛЕНДАРИ</h2>
+        <p class="text">
+            Это случайно сгенерированный текст рыба. С другой стороны реализация намеченного плана развития способствует
+            подготовке и реализации ключевых компонентов планируемого обновления? Повседневная практика показывает, что
+            дальнейшее развитие различных форм деятельности обеспечивает актуальность соответствующих условий
+            активизации. Не следует, однако, забывать о том, что повышение уровня гражданского сознания способствует
+            повышению актуальности всесторонне сбалансированных нововведений!
+
+            Значимость этих проблем настолько очевидна, что постоянное информационно-техническое обеспечение нашей
+            деятельности создаёт предпосылки качественно новых шагов для дальнейших направлений развития проекта!
+
+            Дорогие друзья, постоянное информационно-техническое обеспечение нашей деятельности напрямую зависит от
+            всесторонне сбалансированных нововведений? Повседневная практика показывает, что консультация с
+            профессионалами из IT влечет за собой процесс внедрения и модернизации соответствующих условий активизации!
+            С другой стороны постоянный количественный рост и сфера нашей активности представляет собой интересный
+            эксперимент проверки новых предложений!
+        </p>
+        <p><a name="wall"></a></p>
+        <div class="buttons">
+            <a href="vertical.html" class="rollover5"></a>
+            <a href="horizont.html" class="rollover6"></a>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+
+            <div class="content"> <a href="#"><img src="insta.png" alt="instagramm" width="30px"></a>
+                <a href="https://vk.com/rkbas"><img src="VK_Logo6.png" alt="ВКонтакте" width="30px"></a>
+                <p>Телефон 555-44-33</p>
+                <p>пр. Тореза д. 98 кор. 1</p>
+            </div>
+
+            <div class="footer"></div>
+
+        </div>
+    </footer>
+
+    <!--HTML теги здесь-->
+</body>
+
+</html>
